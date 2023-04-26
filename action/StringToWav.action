@@ -1,0 +1,12 @@
+#goal definition
+int32 timeout
+---
+#result definition
+# listening 0
+# file written 1
+int32 state
+---
+#feedback
+# listening 0
+# file written 1
+int32 state
