@@ -1,0 +1,4 @@
+float32 distance_max
+---
+bool[] right_list
+bool[] top_list

@@ -1,0 +1,14 @@
+#goal definition
+int32 timeout
+---
+#result definition
+# Correspond to the enum in the roboBreizh_detection_door.py
+# OPEN 0
+# CLOSE 1
+int32 state
+---
+#feedback
+# Correspond to the enum in the roboBreizh_detection_door.py
+# OPEN 0
+# CLOSE 1
+int32 state
