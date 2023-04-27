@@ -1,4 +1,4 @@
-perception_pepper/PersonRequestInfo entries_list
+robobreizh_msgs/PersonRequestInfo entries_list
 ---
-perception_pepper/PersonList outputs_list
-perception_pepper/Person_poseList outputs_pose_list
+robobreizh_msgs/Person[] outputs_list
+robobreizh_msgs/Person_pose[] outputs_pose_list

@@ -1,0 +1,11 @@
+# Request
+bool startActionServer
+---
+# Result
+bool is_finished
+---
+# Feedback
+int64 person_id
+float32 dist
+geometry_msgs/Point point
+robobreizh_msgs/PersonPose gesture
