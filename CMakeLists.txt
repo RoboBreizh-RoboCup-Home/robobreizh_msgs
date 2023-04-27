@@ -63,6 +63,7 @@ add_service_files(
   FILES
   TranscriptChecking.srv
   person_features_detection_posture.srv
+  person_features_detection_service.srv
   wave_hand_detection.srv
   object_detection_service.srv
   shoes_and_drink_detection_service.srv
