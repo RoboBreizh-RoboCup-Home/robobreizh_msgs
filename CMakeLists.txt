@@ -56,6 +56,9 @@ add_message_files(
   PersonRequestInfo.msg
   Object.msg
   BoundingBox.msg
+  XYPoint.msg
+  Ping.msg
+  PingStatus.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -68,6 +71,7 @@ add_service_files(
   wave_hand_detection.srv
   object_detection_service.srv
   shoes_and_drink_detection_service.srv
+  pointing_hand_detection.srv
 )
 
 # Generate actions in the 'action' folder
