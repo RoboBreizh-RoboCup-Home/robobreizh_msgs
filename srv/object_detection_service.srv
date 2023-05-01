@@ -1,3 +1,5 @@
-std_msgs/String[] entries_list
+int32 maximum_distance
+int8 publish_person
+std_msgs/String[] object_detection_list
 ---
 robobreizh_msgs/Object[] outputs_list
