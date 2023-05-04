@@ -64,6 +64,7 @@ add_message_files(
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
+  multipose_service.srv
   TranscriptChecking.srv
   person_features_detection_posture.srv
   person_features_detection_service.srv
