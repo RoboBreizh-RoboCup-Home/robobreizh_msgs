@@ -72,6 +72,7 @@ add_service_files(
   object_detection_service.srv
   shoes_and_drink_detection_service.srv
   pointing_hand_detection.srv
+  person_glasses_detection.srv
 )
 
 # Generate actions in the 'action' folder
