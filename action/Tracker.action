@@ -6,7 +6,7 @@ bool is_finished
 ---
 # Feedback
 std_msgs/Header header
-int8 person_id
+int16 person_id
 float32 dist
 geometry_msgs/Point point
 robobreizh_msgs/PersonPose gesture
