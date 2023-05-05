@@ -59,6 +59,7 @@ add_message_files(
   XYPoint.msg
   Ping.msg
   PingStatus.msg
+  Shoes.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -84,6 +85,7 @@ add_action_files(
   Sonar.action
   StringToWav.action
   Tracker.action
+  ShoesDetection.action
 )
 
 ## Generate added messages and services with any dependencies listed here

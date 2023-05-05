@@ -1,0 +1,11 @@
+# Request
+bool startActionServer
+---
+# Result
+bool is_finished
+---
+# Feedback
+std_msgs/Header header
+float32 dist
+geometry_msgs/Point point
+robobreizh_msgs/Shoes shoes_appearance
