@@ -77,6 +77,7 @@ add_service_files(
   person_glasses_detection.srv
   TranscriptIntent.srv
   TranscriptContains.srv
+  shoes_detection.srv
 )
 
 # Generate actions in the 'action' folder
