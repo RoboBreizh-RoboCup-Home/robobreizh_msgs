@@ -78,6 +78,7 @@ add_service_files(
   TranscriptIntent.srv
   TranscriptContains.srv
   shoes_detection.srv
+  SpeechToWav.srv
 )
 
 # Generate actions in the 'action' folder
