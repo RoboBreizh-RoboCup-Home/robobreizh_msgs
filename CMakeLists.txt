@@ -3,16 +3,19 @@ project(robobreizh_msgs)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
+set(MESSAGE_DEPS
+  std_msgs
+  sensor_msgs
+  geometry_msgs
+  actionlib_msgs
+)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED
-  std_msgs
-  sensor_msgs
-  geometry_msgs
   message_generation
-  actionlib_msgs
+  ${MESSAGE_DEPS}
  )
 
 ## System dependencies are found with CMake's conventions
@@ -48,54 +51,37 @@ find_package(catkin REQUIRED
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
+# Find all the messages files
+FILE(GLOB MSG_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/msg"
+      "${CMAKE_CURRENT_SOURCE_DIR}/msg/*.msg")
+
 # Generate messages in the 'msg' folder
 add_message_files(
   FILES
-  PersonPose.msg
-  Person.msg
-  PersonRequestInfo.msg
-  Object.msg
-  BoundingBox.msg
-  XYPoint.msg
-  Ping.msg
-  PingStatus.msg
-  Shoes.msg
+  ${MSG_FILES}
 )
-
+# Find all the service files
+FILE(GLOB SRV_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/srv"
+      "${CMAKE_CURRENT_SOURCE_DIR}/srv/*.srv")
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
-  multipose_service.srv
-  TranscriptChecking.srv
-  person_features_detection_posture.srv
-  person_features_detection_service.srv
-  person_features_detection_distance_service.srv
-  wave_hand_detection.srv
-  object_detection_service.srv
-  shoes_and_drink_detection_service.srv
-  pointing_hand_detection.srv
-  person_glasses_detection.srv
-  TranscriptIntent.srv
-  TranscriptContains.srv
-  shoes_detection.srv
-  SpeechToWav.srv
+  ${SRV_FILES}
 )
+# Find all the action files
+FILE(GLOB ACTION_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/action"
+      "${CMAKE_CURRENT_SOURCE_DIR}/action/*.action")
 
 # Generate actions in the 'action' folder
 add_action_files(
   FILES
-  Sonar.action
-  StringToWav.action
-  Tracker.action
-  ShoesDetection.action
+  ${ACTION_FILES}
 )
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
-  std_msgs  
-  actionlib_msgs
-  geometry_msgs # Or other packages containing msgs
+  ${MESSAGE_DEPS}
 )
 
 ################################################
@@ -132,7 +118,7 @@ catkin_package(
 #  LIBRARIES robobreizh_msgs
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
-CATKIN_DEPENDS message_runtime actionlib_msgs
+CATKIN_DEPENDS message_runtime ${MESSAGE_DEPS}
 )
 
 ###########
