@@ -1,0 +1,1 @@
+robobreizh_msgs/Person[] output_list
