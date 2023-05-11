@@ -1,0 +1,4 @@
+---
+# The score of the genser prediction based on voice features 
+# range from 0-1, {0:F, 1:M}
+float32 gender_score 
