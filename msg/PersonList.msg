@@ -1,1 +1,1 @@
-robobreizh_msgs/Person[] output_list
+robobreizh_msgs/Person[] person_list
