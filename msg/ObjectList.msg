@@ -1,1 +1,1 @@
-robobreizh_msgs/Objectp[] object_list
+robobreizh_msgs/Object[] object_list
