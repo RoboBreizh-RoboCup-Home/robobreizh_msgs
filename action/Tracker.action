@@ -1,5 +1,6 @@
 # Request
 bool startActionServer
+float32 distanceMaximum
 ---
 # Result
 bool is_finished
