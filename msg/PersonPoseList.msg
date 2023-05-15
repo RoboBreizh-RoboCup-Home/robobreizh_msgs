@@ -1,0 +1,1 @@
+robobreizh_msgs/PersonPose[] person_pose_list
