@@ -6,3 +6,4 @@ std_msgs/String color
 int32 width_img
 int32 height_img
 BoundingBox bounding_box
+std_msgs/String status
