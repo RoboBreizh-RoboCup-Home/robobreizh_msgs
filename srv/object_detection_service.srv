@@ -1,5 +1,3 @@
-int32 maximum_distance
-int8 publish_person
-std_msgs/String[] entries_list
+robobreizh_msgs/PersonRequestInfo entries_list
 ---
 robobreizh_msgs/ObjectList outputs_list
