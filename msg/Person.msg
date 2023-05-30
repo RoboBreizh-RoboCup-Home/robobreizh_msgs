@@ -7,4 +7,7 @@ std_msgs/String skin_color
 std_msgs/String glasses
 float32 height
 float32 distance
+bool is_shoes
+bool is_drink
+Object drink
 geometry_msgs/Point32 coord
