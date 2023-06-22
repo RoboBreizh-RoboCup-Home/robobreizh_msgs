@@ -1,0 +1,4 @@
+string[] joint_names
+Float32Array[] angle_lists
+Float32Array[] time_lists
+---
