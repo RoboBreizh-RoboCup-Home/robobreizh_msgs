@@ -1,0 +1,7 @@
+float32 distance_max
+---
+bool waving
+bool raising_left
+bool rasing_right
+bool point_right
+bool point_left
