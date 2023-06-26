@@ -1,7 +1,4 @@
 float32 distance_max
+std_msgs/String request
 ---
-bool waving
-bool raising_left
-bool rasing_right
-bool point_right
-bool point_left
+robobreizh_msgs/PersonPoseList outputs_list

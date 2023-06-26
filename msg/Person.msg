@@ -9,5 +9,10 @@ float32 height
 float32 distance
 bool is_shoes
 bool is_drink
+bool is_waving
+bool is_raising_left
+bool is_raising_right
+bool is_pointing_left
+bool is_pointing_right
 Object drink
 geometry_msgs/Point32 coord
