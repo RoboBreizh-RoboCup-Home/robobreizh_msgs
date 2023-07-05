@@ -1,3 +1,4 @@
 robobreizh_msgs/ObjectRequestInfo entries_list
+string shelf_name
 ---
 robobreizh_msgs/ObjectList outputs_list
